@@ -15,3 +15,5 @@ except FileNotFoundError:
 with open("createfile.txt", "x") as f:
     f.write("New file has been created")
 
+with open("json.py", "x") as f:
+    f.write("json")
