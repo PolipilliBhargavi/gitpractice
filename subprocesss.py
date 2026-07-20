@@ -1,0 +1,12 @@
+import subprocess
+process = subprocess.run(["cmd", "/c", "dir"], capture_output = True, text = True)
+print(process.stdout)
+#process1 = subprocess.run(['kubectl', 'get', 'pods', '-n', 'dev'], capture_output = True, text = True)
+#print(process1)
+code = subprocess.call(['cmd', '/c', 'dir'])
+print(code)
+hostname = subprocess.check_output(['hostname'], text = True) 
+print(hostname)   
+subprocess.check_call(['cmd', '/c', 'dir', 'login.txt'])  
+print(process.stderr)
+print(process.returncode)
